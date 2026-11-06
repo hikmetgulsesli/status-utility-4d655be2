@@ -1,0 +1,27 @@
+[
+  {
+    "screenId": "b7455b52011b4b53bc9cc1eebf14d477",
+    "screenTitle": "Status Page - Status Utility",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Refresh Status",
+        "line": 58
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Refresh Status",
+        "line": 58
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 1,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]

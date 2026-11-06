@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Page - Status Utility</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
+  <div data-surface-id="SURF_STATUS_PAGE" class="flex-1 flex flex-col justify-between p-6 md:p-10">
+    <header class="w-full max-w-5xl mx-auto flex items-center justify-between pb-6 border-b border-slate-200">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-sm tracking-wider">
+          SU
+        </div>
+        <div>
+          <span class="font-semibold text-slate-900 block leading-tight">Status Utility</span>
+          <span class="text-xs text-slate-500">System Monitoring &amp; Telemetry</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-medium text-emerald-700">Systems Operational</span>
+      </div>
+    </header>
+
+    <main class="w-full max-w-lg mx-auto my-auto py-12">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="p-6 md:p-8 border-b border-slate-100">
+          <div class="flex items-start justify-between">
+            <div>
+              <h1 class="text-xl font-bold text-slate-900">Application Status</h1>
+              <p class="text-xs font-mono text-slate-400 mt-1">Route: /status</p>
+            </div>
+            <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-emerald-100 text-emerald-800">
+              Live Service
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6 md:p-8 space-y-5">
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 space-y-3">
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-slate-500">Current State:</span>
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-emerald-100 text-emerald-800">refreshed</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-slate-500">Status Message:</span>
+              <span class="font-medium text-slate-900 text-right">Status refreshed</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-slate-500">Data Persistence:</span>
+              <span class="text-xs text-slate-600">Synchronized with local storage</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="button" data-action="ACT_REFRESH_STATUS" data-control-slot="CSLOT_REFRESH_STATUS_REFRESH_CONTROL" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm transition-colors shadow-sm">
+              <span>Refresh Status</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full max-w-5xl mx-auto pt-6 border-t border-slate-200 text-center">
+      <p class="text-xs text-slate-400">
+        Status Utility &#x00A9; 2025. All telemetry endpoints operating normally.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
